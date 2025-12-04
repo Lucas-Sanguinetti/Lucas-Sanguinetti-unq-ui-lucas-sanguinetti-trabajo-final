@@ -3,41 +3,57 @@ html, body, #root {
   width: 100%;
   margin: 0;
   padding: 0;
+  background-color: #404040;
 }
-
-
 
 .all{
   width: 100%;
   height: 100%;
+  
 }
 
-.container {
-  --size:80px;
-  background-color: white;
-  color: black;
+.button {
+  background-color: grey;
+  color: white;
+  border: 3px #404040;
   padding: 2rem;
-  width: var(--size *2);
-  height: var(--size);
+  width: 400px;
+  height: 80px;
   text-align: center;
-  align-items: center;
+  border-radius: 12px;
+  
 }
 
 .containerQuestion {
-  --size:100px;
-  background-color: white;
-  color: black;
+  color: white;
+  font-size: 32px;
   padding: 2rem;
   margin: 35px;
-  width: var(--size *2);
-  height: var(--size);
   text-align: center;
-  align-items: center;
+  border-radius: 12px;
+  margin-bottom: 60px;
+  margin-top: 160px;
+
 }
 
 .contenedorDeColumnas {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, auto); 
   gap: 10px; 
   padding: 2rem;
+  justify-content: center; 
+  align-items: center;
+}
+
+
+.rigthAnswer{
+  background-color: #4CAF50;
+  border: 3px #3E8E41;
+  color: white;
+}
+
+.wrongAnswer{
+  background-color: #F44336;
+  border: 3px #D32F2F;
+  color: white;
 }
